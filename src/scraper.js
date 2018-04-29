@@ -5,12 +5,12 @@ import { map, includes } from "lodash";
 import sites, { scrape as defaultScrape } from "./sites";
 
 export const scrape = async (url, site) => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage({ 
+  const browser = await puppeteer.launch({ 
                headless: true,
                timeout: 90000,
                args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
+  const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: "networkidle" });
 
