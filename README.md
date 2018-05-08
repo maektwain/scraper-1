@@ -4,6 +4,8 @@ Node.js based scraper using headless chrome which allows scraping for websites
 1. Amazon De
 2. Amazon com
 3. Walmart
+4. Bestbuy
+
 
 
 [![version](https://img.shields.io/npm/v/@jonstuebe/scraper.svg?style=flat-square)](https://www.npmjs.com/package/@jonstuebe/scraper) [![dependecies](https://david-dm.org/jonstuebe/scraper.svg)](https://www.npmjs.com/package/@jonstuebe/scraper) [![build](https://travis-ci.org/jonstuebe/scraper.svg?branch=master)](https://www.npmjs.com/package/@jonstuebe/scraper)
@@ -11,7 +13,7 @@ Node.js based scraper using headless chrome which allows scraping for websites
 ## Installation
 
 ```bash
-$ npm install @jonstuebe/scraper
+$ npm install cashpay-scraper
 ```
 
 ## Features
@@ -36,7 +38,7 @@ const Scraper = require("cashpay-scraper");
 
 #### es6
 ```js
-import Scraper from "@jonstuebe/scraper";
+import Scraper from "cashpay-scraper";
 
 // run inside of an async function
 (async () => {
@@ -47,7 +49,7 @@ import Scraper from "@jonstuebe/scraper";
 
 #### with promises
 ```js
-import Scraper from "@jonstuebe/scraper";
+import Scraper from "cashpay-scraper";
 
 Scraper('http://www.amazon.com/gp/product/B00X4WHP5E/').then(data => {
   console.log(data)
@@ -57,7 +59,7 @@ Scraper('http://www.amazon.com/gp/product/B00X4WHP5E/').then(data => {
 #### custom scrapers
 
 ```js
-const Scraper = require("@jonstuebe/scraper");
+const Scraper = require("cashpay-scraper");
 
 (async () => {
   const site = {
@@ -95,12 +97,7 @@ const Scraper = require("@jonstuebe/scraper");
 
   * Need to add ability to run a test to see if markup has changed, and if so disable the store selectors and fallback to the generic scraper.
 
-## Contributing
-If you want to add any sites, or just have an idea or feature, go ahead and fork [this repo](https://github.com/jonstuebe/scraper/) and send me a pull request. I'll be happy to take a look when I can and get back to you.
 
-## Issues
-
-For any and all issues/bugs, please post a description and code sample to reproduce the problem on the [issues page](https://github.com/jonstuebe/scraper/issues).
 
 ## License
 
