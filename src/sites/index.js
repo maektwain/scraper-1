@@ -22,10 +22,14 @@ import * as amazon from "./amazon";
 import * as bestbuy from "./bestbuy";
 import * as target from "./target";
 import * as walmart from "./walmart";
+import * as amazonde from "./amazonde";
+import * as nike from "./nike";
 
 export default {
   amazon,
   bestbuy,
   target,
-  walmart
+  walmart,
+  amazonde,
+    nike
 };

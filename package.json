@@ -1,19 +1,19 @@
 {
-  "name": "@jonstuebe/scraper",
-  "version": "0.1.4",
-  "description": "website scraper",
+  "name": "cashpay-scraper",
+  "version": "0.1.7",
+  "description": "website scraper tool for cashpay wallet",
   "main": "lib/index.js",
   "files": [
     "lib/*"
   ],
-  "homepage": "https://github.com/jonstuebe/scraper#readme",
-  "author": "Jon Stuebe <jstuebe@gmail.com>",
+  "homepage": "https://github.com/maektwain/scraper-1#readme",
+  "author": "Saransh Sharma <saransh@theupscale.in>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonstuebe/scraper.git"
+    "url": "git+https://github.com/maektwain/scraper-1.git"
   },
   "bugs": {
-    "url": "https://github.com/jonstuebe/scraper/issues"
+    "url": "https://github.com/maektwain/scraper-1/issues"
   },
   "engines": {
     "node": "8.6.0"

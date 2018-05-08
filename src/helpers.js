@@ -20,7 +20,7 @@ export const getText = async (selector, page) => {
 export const getSrc = async (selector, page, wait = false) => {
   if (wait) {
     await page
-      .waitForSelector(selector, { visible: true, timeout: 7500 })
+      .waitForSelector(selector, { visible: true, timeout: 17500 })
       .catch(lookupFailure);
   }
   return await page.$eval(selector, e => e.src).catch(lookupFailure);

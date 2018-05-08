@@ -1,5 +1,10 @@
 # Scraper
-Node.js based scraper using headless chrome
+Node.js based scraper using headless chrome which allows scraping for websites 
+
+1. Amazon De
+2. Amazon com
+3. Walmart
+
 
 [![version](https://img.shields.io/npm/v/@jonstuebe/scraper.svg?style=flat-square)](https://www.npmjs.com/package/@jonstuebe/scraper) [![dependecies](https://david-dm.org/jonstuebe/scraper.svg)](https://www.npmjs.com/package/@jonstuebe/scraper) [![build](https://travis-ci.org/jonstuebe/scraper.svg?branch=master)](https://www.npmjs.com/package/@jonstuebe/scraper)
 
@@ -20,7 +25,7 @@ Simply require the package and initialize with a url and pass a callback functio
 
 #### es5
 ```js
-const Scraper = require("@jonstuebe/scraper");
+const Scraper = require("cashpay-scraper");
 
 // run inside of an async function
 (async () => {
